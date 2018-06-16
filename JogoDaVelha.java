@@ -2,7 +2,7 @@ package JogoDaVelha;
 
 import java.util.Scanner;
 
-public class JogoDaVelha {
+public class ExercÃ­cio JogoDaVelha {
 
 	public static void main(String[] args) {
 
@@ -37,7 +37,7 @@ public class JogoDaVelha {
 				if (linha >= 1 && linha <= 3) {
 					linhaValida = true;
 				} else {
-					System.out.println("Entrada inválida, tente novamente.");
+					System.out.println("Entrada invÃ¡lida, tente novamente.");
 				}
 			}
 
@@ -48,14 +48,14 @@ public class JogoDaVelha {
 				if (coluna >= 1 && coluna <= 3) {
 					colunaValida = true;
 				} else {
-					System.out.println("Entrada inválida, tente novamente.");
+					System.out.println("Entrada invÃ¡lida, tente novamente.");
 				}
 			}
 
 			linha--;
 			coluna--;
 			if (jogoVelha[linha][coluna] == 'X' || jogoVelha[linha][coluna] == 'O') {
-				System.out.println("Posição já usada, tente novamente.");
+				System.out.println("PosiÃ§Ã£o jÃ¡ usada, tente novamente.");
 			} else {
 				jogoVelha[linha][coluna] = sinal;
 				jogada++;
@@ -79,7 +79,7 @@ public class JogoDaVelha {
 					(jogoVelha[0][0] == 'X' && jogoVelha[1][1] == 'X' && jogoVelha[2][2] == 'X') || // diagonal
 					(jogoVelha[0][2] == 'X' && jogoVelha[1][1] == 'X' && jogoVelha[2][0] == 'X')) { // diagonal inversa
 				ganhou = true;
-				System.out.println("Parabéns, jogador 1 ganhou!");
+				System.out.println("ParabÃ©ns, jogador 1 ganhou!");
 			} else if ((jogoVelha[0][0] == 'O' && jogoVelha[0][1] == 'O' && jogoVelha[0][2] == 'O') || // linha 1
 					(jogoVelha[1][0] == 'O' && jogoVelha[1][1] == 'O' && jogoVelha[1][2] == 'O') || // linha 2
 					(jogoVelha[2][0] == 'O' && jogoVelha[2][1] == 'O' && jogoVelha[2][2] == 'O') || // linha 3
@@ -89,10 +89,10 @@ public class JogoDaVelha {
 					(jogoVelha[0][0] == 'O' && jogoVelha[1][1] == 'O' && jogoVelha[2][2] == 'O') || // diagonal
 					(jogoVelha[0][2] == 'O' && jogoVelha[1][1] == 'O' && jogoVelha[2][0] == 'O')) { // diagonal inversa
 				ganhou = true;
-				System.out.println("Parabéns, jogador 2 ganhou!");
+				System.out.println("ParabÃ©ns, jogador 2 ganhou!");
 			} else if (jogada > 9) {
 				ganhou = true;
-				System.out.println("Ninguém ganhou essa partida.");
+				System.out.println("NinguÃ©m ganhou essa partida.");
 			}
 		}
 
