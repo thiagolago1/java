@@ -92,7 +92,7 @@ public class Exercício JogoDaVelha {
 				System.out.println("Parabéns, jogador 2 ganhou!");
 			} else if (jogada > 9) {
 				ganhou = true;
-				System.out.println("Ninguém ganhou essa partida.");
+				System.out.println("Ninguém ganhou essa partida =/.");
 			}
 		}
 
